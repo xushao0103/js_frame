@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <style type="text/css">
+    div {
+      height: 200px;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class='som'></div>
+  <div class='som'></div>
+  <button id="btnhide">隐藏</button>
+  <button id="btnshow">显示</button>
+  <script src='../xushao.js'></script>
+  <script type="text/javascript">
+    var btnhide = document.getElementById('btnhide');
+    var btnshow = document.getElementById('btnshow');
+    $('#btnhide').on('click', function() {
+      $('.som').hide();
+    });
+    $('#btnshow').on('click', function() {
+      $('.som').show();
+    });
+  </script>
+</body>
+</html>
